@@ -6,6 +6,7 @@ import router from './router'
 import store from './store'
 import i18n from './lang' // Internationalization
 import * as filters from './filters' // global filters
+import $ from 'jquery' // global filters
 
 import 'normalize.css/normalize.css' // A modern alternative to CSS resets
 import '@/styles/index.scss' // global css

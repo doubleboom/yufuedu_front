@@ -1,6 +1,6 @@
 <template>
  <div>
-   hello
+   home
     <p>{{$t("route.home")}}</p> 
     <button @click='changeLang'>change language</button>  
     <p>{{$t("route.home")}}</p> 

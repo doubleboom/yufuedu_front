@@ -1,6 +1,7 @@
 <template>
  <div>
    home
+   <a href="http://127.0.0.1:7001/passport/github"></a>
     <p>{{$t("route.home")}}</p> 
     <button @click='changeLang'>change language</button>  
     <p>{{$t("route.home")}}</p> 

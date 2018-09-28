@@ -6,7 +6,30 @@ export function loginByUsername (username, password) {
     password
   }
   return request({
-    url: '/login/login',
+    url: '/api/login',
+    method: 'post',
+    data
+  })
+}
+
+export function upload(formdata) {
+  return request({
+    url: '/api/uploadMutiple',
+    method: 'post',
+    data: formdata,
+    headers:{
+      "content-type":"multipart/*"
+    }
+  })
+}
+
+export function registry(username, password) {
+  const data = {
+    username,
+    password
+  }
+  return request({
+    url: '/api/registry',
     method: 'post',
     data
   })
@@ -14,8 +37,15 @@ export function loginByUsername (username, password) {
 
 export function logout () {
   return request({
-    url: '/login/logout',
-    method: 'post'
+    url: '/api/logout',
+    method: 'get'
+  })
+}
+
+export function alluser() {
+  return request({
+    url: '/api/allUser',
+    method: 'get'
   })
 }
 
